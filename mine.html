@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="tester" class="test"></div>
+
+    <div id="sidebar" class="csidebar">
+
+        <!-- <header class="sidehead">Welcome Donny</header> -->
+
+        <ul class="tabs">
+            <li data-tab-target="#notes" class="tab">Notes</li>
+            <li data-tab-target="#bg"class="tab">Background</li>
+        </ul>
+
+        <div class="tabs-content">
+            <div id="bg" data-tab-content>
+                
+                <div class="backgrounds">
+                    <img src="/Images/defaultBG.png" alt="defaultred" class="cards" id="1" data-background="#1" title="Love">
+                    <h1>Love</h1>
+                    <img src="/Images/darkBG.png" alt="blackish" class="cards" id="2" data-background="#2"> 
+                    <h1>Midnight Blue</h1>
+                    <img src="/Images/blueBG.png" alt="Bluish" class="cards" id="3" data-background="#3">
+                    <h1>Blue Strike</h1>
+                    <img src="/Images/aurora.png" alt="Greenish" class="cards" id="4" data-background="#4">
+                    <h1>Aurora</h1>
+                    <img src="/Images/cookiesAndCream.png" alt="black and White" class="cards" id="5" data-background="#5">
+                    <h1>Cookies and Cream</h1>
+                    <img src="/Images/blackandYellow.png" alt="black and yellow" class="cards" id="6" data-background="#6">
+                    <h1>Traffic</h1>
+                    <img src="/Images/bloodwhite.png" alt="shark in the ocean" class="cards" id="7" data-background="#7">
+                    <h1>Blood in the water</h1>
+                    <img src="/Images/pinkGreen.png" alt="THIS IS PINK AND GREEN" class="cards" id="8" data-background="#8">
+                    <h1>Pinkity Greenity</h1>
+                    <img src="/Images/pinktoblue.png" alt="PINK TO BLUE OMG" class="cards" id="9" data-background="#9">
+                    <h1>Two Source</h1>
+                    <img src="/Images/instagram.png" alt="INSTAA" class="cards" id="10" data-background="#10">
+                    <h1>Instagram</h1>
+                    <img src="/Images/ocean.png" alt="Under the sea" class="cards" id="11" data-background="#11">
+                    <h1>Ocean</h1>
+
+                </div>
+            </div>
+            <div id="notes" data-tab-content>
+                <br>
+                <form id="new-task-form">
+                    <input type="text" id="new-task-input" placeholder="New Note">
+                    <input type="submit" id="new-task-submit" value="Add">
+                </form>
+                <main>
+                    <section class="task-list">
+                        <h2>Notes</h2>
+                        <div id="tasks">
+                            <!-- <div class="task">
+
+                                <div class="content">
+                                    <input type="text" class="texts" value="My shiny task" readonly>
+                                </div>
+                                <div class="actions">
+                                    <button class="edit">Edit</button>
+                                    <button class="delete">Delete</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <div id="notes" data-tab-content>
+                <br>
+                <h1>This is notes</h1>
+            </div>
+
+        </div>
+    </div>
+    <main>
+
+    </main>
+    <section>
+
+    </section>
+    <div class="container">
+        <span id="hours">00</span>
+        <span> </span>
+        <span id="minutes">00</span>
+        <span> </span>
+        <span id="seconds">00</span>
+        <span></span>
+
+    </div>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> GOOD IDEA RMEMER -->
+    <div class="text">
+        <!-- <h1>Welcome Donny</h1> -->
+    </div>
+    
+</body>
+</html>

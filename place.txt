@@ -1,0 +1,36 @@
+window.onload=function(){
+    chrome.storage.sync.get(["bey"], function(result){
+        console.log(result.bey)
+        document.getElementById("testss").innerHTML = result.bey;
+        // chrome.notifications.create
+    });
+
+    const button = document.getElementById("valuer");
+    console.log(button)
+    if(button){
+        button.addEventListener("click", getInput);
+    }
+function getInput() {
+    console.log("PROCESSING")
+    var input = document.getElementById("input").value;
+    
+    chrome.storage.sync.set({bey: input}, function() {
+        console.log("Value is set to " + input);
+    });
+    
+    chrome.storage.sync.get(["bey"], function(result){
+        console.log(result.bey)
+        document.getElementById("testss").innerHTML = result.bey;
+    });
+}
+
+chrome.storage.sync.get(["key"], function(results){
+    console.log(results.key)
+    document.getElementById("testss").innerHTML = results.key;
+});
+
+
+    <input type="text" placeholder="putsomethinghere" id="input">
+    <button type="submit" id="valuer">Get Value</button>
+    <button type="submit" id="test">Set Value</button>
+    <h1 id="testss">h</h1>
