@@ -1,0 +1,29 @@
+{
+    "name": "Vibe machine",
+    "description": "This will make you vibey",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+      },
+    "chrome_url_overrides" : {
+        "newtab": "mine.html"
+      },
+    "permissions": ["storage","scripting"],
+    "action": {
+      "default_icon": {
+        "16":  "/images1/logo.png",
+        "32":  "/images1/logo.png",
+        "48":  "/images1/logo.png",
+        "128": "/images1/logo.png"
+      }
+    },
+    "icons": {
+      "16":  "/images1/logo.png",
+      "32":  "/images1/logo.png",
+      "48":  "/images1/logo.png",
+      "128": "/images1/logo.png"
+    }
+  
+      
+}
