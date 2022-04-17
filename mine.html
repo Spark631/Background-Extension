@@ -7,22 +7,22 @@
     <title>New Tab</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="background.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Square Peg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scada">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret One">
 </head>
 <body>
-    <div id="tester" class="test"></div>
-
+    <div id="tester" class="test" ></div>
     <div id="sidebar" class="csidebar">
-
-        <!-- <header class="sidehead">Welcome Donny</header> -->
-
         <ul class="tabs">
-            <li data-tab-target="#notes" class="tab">Notes</li>
+            <li data-tab-target="#settings" class="tab">Settings</li>
             <li data-tab-target="#bg"class="tab">Background</li>
         </ul>
 
         <div class="tabs-content">
-            <div id="bg" data-tab-content>
-                
+            <div id="bg" data-tab-content class="active">
                 <div class="backgrounds">
                     <img src="/Images/defaultBG.png" alt="defaultred" class="cards" id="1" data-background="#1" title="Love">
                     <h1>Love</h1>
@@ -46,38 +46,73 @@
                     <h1>Instagram</h1>
                     <img src="/Images/ocean.png" alt="Under the sea" class="cards" id="11" data-background="#11">
                     <h1>Ocean</h1>
-
                 </div>
             </div>
-            <div id="notes" data-tab-content>
-                <br>
-                <form id="new-task-form">
-                    <input type="text" id="new-task-input" placeholder="New Note">
-                    <input type="submit" id="new-task-submit" value="Add">
-                </form>
-                <main>
-                    <section class="task-list">
-                        <h2>Notes</h2>
-                        <div id="tasks">
-                            <!-- <div class="task">
+            <div id="settings" data-tab-content>
+                <div class="Styles">
+                    <div class="style-options">
+                        <div class="style-option">
+                            <h2 class="option_style">Time</h2>
+                            <select id="Ctime" class="Soption">
+                                <option value="false" selected>Standard</option>
+                                <option value="true">Military</option>
+                            </select>
 
-                                <div class="content">
-                                    <input type="text" class="texts" value="My shiny task" readonly>
-                                </div>
-                                <div class="actions">
-                                    <button class="edit">Edit</button>
-                                    <button class="delete">Delete</button>
-                                </div>
-                            </div> -->
+                            <h2 class="option_style">Seconds</h2>
+                            <select id="Cseconds" class="Soption">
+                                <option value="true" selected>Seconds</option>
+                                <option value="false">No Seconds</option>
+                            </select>
+
+                            <h2 class="option_style">Date</h2>
+                            <select id="Cdate" class="Soption">
+                                <option value="true" selected>Date</option>
+                                <option value="false">No Date</option>
+                            </select>
+
+                            <h2 class="option_style">Font</h2>
+                            <select id="fonts" class="Soption">
+                                <option value="Arial">Arial</option>
+                                <option value="Courier">Courier</option>
+                                <option value="Comic Sans MS">Comic Sans MS</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Helvetica">Helvetica</option>
+                                <option value="Lucida Console">Lucida Console</option>
+                                <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                                <option value="Tahoma">Tahoma</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Trebuchet MS">Trebuchet MS</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Open Sans">Open Sans</option>
+                                <option value="Square Peg">Square Peg</option>
+                                <option value="Sofia">Sofia</option>
+                                <option value="Scada">Scada</option>
+                                <option value="Poiret One">Poiret One</option>
+                            </select>
                         </div>
-                    </section>
-                </main>
-            </div>
-            <div id="notes" data-tab-content>
-                <br>
-                <h1>This is notes</h1>
-            </div>
 
+                        <div class="style-option">
+                            <h2 class="option_style">Font Size</h2>
+                            <select id="font-size" class="Soption">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <main>
@@ -86,18 +121,15 @@
     <section>
 
     </section>
-    <div class="container">
+    <div class="container" id="Sclock">
         <span id="hours">00</span>
-        <span> </span>
         <span id="minutes">00</span>
-        <span> </span>
         <span id="seconds">00</span>
-        <span></span>
-
     </div>
-    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> GOOD IDEA RMEMER -->
-    <div class="text">
-        <!-- <h1>Welcome Donny</h1> -->
+    <div class="days" id="Sdays">
+        <span id="day">Monday</span>
+        <span id="month">Monday</span>
+        <span id="date">Monday</span>
     </div>
     
 </body>
