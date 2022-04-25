@@ -58,7 +58,7 @@ function displayTime(){
     document.getElementById("hours").innerHTML = hrs;
     document.getElementById("minutes").innerHTML = min;
 
-}
+};
 setInterval(displayTime, 10);
 
 window.onload=function(){
@@ -108,7 +108,7 @@ window.onload=function(){
     });
     chrome.storage.sync.get(["background"], function(mainBackground){
         document.body.style.background = mainBackground.background;
-    })
+    });
 
     var fontSize = document.getElementById("font-size");
     fontSize.addEventListener("change", function(){
@@ -149,7 +149,7 @@ window.onload=function(){
         text == "true" ? Military = true : Military = false;
         chrome.storage.sync.set({time: text}, function(){
         })
-    })
+    });
 
     let isOpen = false;
     document.getElementById("tester").addEventListener("click", test);
@@ -163,7 +163,7 @@ window.onload=function(){
             document.getElementById("tester").style.marginLeft="0px";
             isOpen = false;
         }
-    }
+    };
     
     const backgrounds = document.querySelectorAll('[data-background]')
     backgrounds.forEach(bg => {
@@ -217,7 +217,5 @@ window.onload=function(){
             })    
             target.classList.add("active")
         })    
-    })
-    
-    
+    })   
 }
