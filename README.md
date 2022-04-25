@@ -13,3 +13,13 @@ Fully customizable settings
 - Change the Font Size
 - Turn Off or On the Date
 - Turn Off or On the Seconds
+
+# How to use
+- Download the zip file under "Code"
+- Unzip the File
+- Go to chrome://extensions/
+- Make sure Developer mode is ON
+- Click Load Extension on the top left
+- Select the inside file of the Unzipped file.
+- Go to a new tab and allow the extension to change the background
+- Enjoy!
