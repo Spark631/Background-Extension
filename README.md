@@ -18,7 +18,7 @@ Fully customizable settings
 - Download the zip file under "Code"
 - Unzip the File
 - Go to chrome://extensions/
-- Make sure Developer mode is ON
+- Make sure Developer mode is ON top right
 - Click Load Extension on the top left
 - Select the inside file of the Unzipped file
 - Go to a new tab and allow the extension to change the background
