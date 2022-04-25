@@ -20,6 +20,7 @@ Fully customizable settings
 - Go to chrome://extensions/
 - Make sure Developer mode is ON
 - Click Load Extension on the top left
-- Select the inside file of the Unzipped file.
+- Select the inside file of the Unzipped file
 - Go to a new tab and allow the extension to change the background
-- Enjoy!
+- Customize to your liking using the left side bar
+- And enjoy! 
